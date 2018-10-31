@@ -1,0 +1,44 @@
+<html>
+<link rel="stylesheet" href="test.css">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>The Periphrastically Phrased 'Portfolio of Bahram Khan</title>
+</head>
+
+<body style="background-color: #005E7C;text-align:center";>
+<header>
+	<h1>Bahram Khan Zehri's Portfolio</h1>
+</header>
+
+<div>
+  <ul>
+    <a href="Index.html"><button class="button">Home</button></a>
+    <a href="Projects.html"><button class="button">Coding Projects</button></a>
+  </ul>
+</div>
+
+
+<h2>Shopping List</h1> 
+
+<ol>
+    <li> Food </li>
+</ol>
+
+<input type="text" id="unname">
+
+<button id="send">Get TextBox Value</button> 
+<button id="Reset">Reset It</button>
+
+<script>
+$(document).ready(function(){
+    
+    $("#send").click(function(){
+
+        $("ol").append("<li>" + $("#unname").val()+ "</li>");
+    });
+
+});
+</script>
+</body>
+</html>

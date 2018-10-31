@@ -1,0 +1,41 @@
+<html>
+<link rel="stylesheet" href="test.css">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>The Periphrastically Phrased 'Portfolio of Bahram Khan</title>
+</head>
+
+<body style="background-color: #005E7C;text-align:center";>
+<header>
+	<h1>Bahram Khan Zehri's Portfolio</h1>
+</header>
+
+<div>
+  <ul>
+    <a href="Index.html"><button class="button">Home</button></a>
+    <a href="Projects.html"><button class="button">Coding Projects</button></a>
+  </ul>
+</div>
+
+<p id="demo"></p>
+
+<script>
+    var text;
+    var password  = prompt("Please enter a password, Sir.");
+        var npassword = prompt("Please enter your password, Sir.");
+        switch(npassword) {
+            case password:
+                text = "Correct, access has been granted";
+                document.getElementById("demo").innerHTML = text;
+                break;
+            default:
+                text = "WRONG WRONG WRONG!!!";
+                document.getElementById("demo").innerHTML = text;
+                break;      
+    }
+
+</script>
+
+</body>
+</html>

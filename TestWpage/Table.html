@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="test.css">
+<head>
+	<title>The Periphrastically Phrased 'Portfolio of Bahram Khan</title>
+</head>
+<body style="background-color: #005E7C;text-align:center";>
+<header>
+	<h1>Bahram Khan Zehri's Portfolio</h1>
+</header>
+
+
+<div>
+  <ul>
+    <a href="Index.html"><button class="button">Home</button></a>
+    <a href="Projects.html"><button class="button">Coding Projects</button></a>
+  </ul>
+</div>
+
+<h2>JavaScript times table</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+var tms = prompt("Enter a number for the times table");
+while (i < 100) {
+    text += tms + ' x ' + i + ' is ' + parseInt(tms, 10) * i;
+    i++;
+    
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
